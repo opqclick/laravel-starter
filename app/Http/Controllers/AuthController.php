@@ -33,7 +33,7 @@ class AuthController extends Controller
             }
         }
 
-        return redirect()->route('login')->with('msg', 'Incorrect password! Please check?');
+        return redirect()->route('login')->withInput(['email'=> $request->email])->with('msg', 'Incorrect password! Please check?');
     }
 
     public function postLogout(){
