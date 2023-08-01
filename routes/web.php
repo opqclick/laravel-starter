@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Administrator\UserManagementController;
 use App\Http\Controllers\User\UserDashboardController;
 use App\Http\Controllers\Administrator\AdministratorDashboardController;
 use App\Http\Controllers\AuthController;
@@ -37,6 +38,12 @@ Route::middleware(['auth'])->group(function () {
         Route::prefix('administrator')->group(function () {
             Route::name('administrator.')->group(function () {
                 Route::get('dashboard', [AdministratorDashboardController::class, 'show'])->name('dashboard');
+            });
+            Route::prefix('users')->group(function () {
+                Route::name('administrator.')->group(function () {
+                    Route::get('list', [UserManagementController::class, 'index'])->name('users.list');
+                    Route::get('create', [UserManagementController::class, 'create'])->name('users.create');
+                });
             });
         });
 

@@ -5,7 +5,6 @@
     </head>
     <body class="hold-transition skin-blue sidebar-mini">
         <div class="wrapper">
-
             <header class="main-header">
                 @include('layouts_partials.adminlte_header')
             </header>

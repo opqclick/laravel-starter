@@ -16,9 +16,11 @@ class AdministratorDashboardController extends Controller
     public function show(){
         $commonData=[
             'title' => 'Administrator',
-            'page_title' => 'Dashboard'
+            'page_title' => 'Dashboard',
+            'menu' => 'dashboard'
         ];
 
-        return view('administrator.dashboard')->with('commonData', $commonData);
+        return view('administrator.dashboard')
+            ->with(compact('commonData'));
     }
 }

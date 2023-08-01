@@ -10,7 +10,7 @@ class AuthController extends Controller
 {
     public function getLogin(){
         $commonData=[
-            'title' => 'Leaderboard',
+            'title' => '',
             'page_title' => 'Login'
         ];
 

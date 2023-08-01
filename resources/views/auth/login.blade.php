@@ -36,7 +36,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="../../index2.html"><b>Admin</b>LTE</a>
+        <a href="#"><b>Admin</b>LTE</a>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
@@ -81,14 +81,8 @@
                 <!-- /.col -->
             </div>
         </form>
-
-        <div class="social-auth-links text-center">
-            <p>- AND -</p>
-        </div>
-        <!-- /.social-auth-links -->
-
+        <br>
         <a href="#">I forgot my password</a>
-
     </div>
     <!-- /.login-box-body -->
 </div>
