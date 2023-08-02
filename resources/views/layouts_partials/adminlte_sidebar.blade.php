@@ -13,7 +13,7 @@
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active">
+        <li class="@if($commonData['menu'] == 'administrator' || $commonData['menu'] == 'user' && $commonData['menu-active'] == 'dashboard') active @endif">
             <a href="#">
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             </span>
@@ -49,8 +49,12 @@
             </span>
             </a>
             <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-plus"></i> Create / Query Type Form</a></li>
+                <li><a href="#"><i class="fa fa-plus"></i> List / List of all Query Type</a></li>
+
                 <li><a href="#"><i class="fa fa-plus"></i> Create / Leads Entry Form</a></li>
                 <li><a href="#"><i class="fa fa-list"></i> List / List of all leads</a></li>
+
                 <li><a href="#"><i class="fa fa-upload"></i> Import Leads</a></li>
                 <li><a href="#"><i class="fa fa-download"></i> Export Leads</a></li>
             </ul>

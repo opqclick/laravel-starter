@@ -17,7 +17,8 @@ class AdministratorDashboardController extends Controller
         $commonData=[
             'title' => 'Administrator',
             'page_title' => 'Dashboard',
-            'menu' => 'dashboard'
+            'menu' => 'administrator',
+            'menu-active' => 'dashboard'
         ];
 
         return view('administrator.dashboard')

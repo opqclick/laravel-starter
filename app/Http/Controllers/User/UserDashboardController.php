@@ -14,8 +14,10 @@ class UserDashboardController extends Controller
 
     public function show(){
         $commonData=[
-            'title' => 'User',
-            'page_title' => 'Dashboard'
+            'title' => 'Administrator',
+            'page_title' => 'Dashboard',
+            'menu' => 'user',
+            'menu-active' => 'dashboard'
         ];
 
         return view('user.dashboard')->with('commonData', $commonData);
